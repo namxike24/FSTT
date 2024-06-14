@@ -4,7 +4,6 @@ plugins {
     alias(libs.plugins.serialization)
     alias(libs.plugins.hilt)
     alias(libs.plugins.kapt)
-    id("maven-publish")
 }
 
 android {
@@ -39,6 +38,8 @@ android {
         }
     }
 }
+
+apply(from = "$rootDir/stt-gradle-maven.gradle")
 
 dependencies {
 
