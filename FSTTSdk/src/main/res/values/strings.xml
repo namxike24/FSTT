@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="context_null_error">Context must not be null</string>
+    <string name="empty_secret_key">Secret Key không hợp lệ</string>
+    <string name="empty_app_id">App ID không hợp lệ</string>
+
+    <string name="empty_file">File không có giá trị</string>
+
+    <string name="message_no_detect_speech">Không phát hiện giọng nói</string>
+    <string name="message_error_record_process">Xảy ra lỗi trong quá trinh ghi âm</string>
+    <string name="message_permission_audio_denied">Record audio permission denied!</string>
+    <string name="message_recorder_not_initial">gateway not initial</string>
+    <string name="message_sdk_not_initial">sdk not initial</string>
+    <string name="message_token_is_empty">token must not be null or empty</string>
+
+</resources>
