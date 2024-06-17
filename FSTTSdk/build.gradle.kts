@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.serialization)
     alias(libs.plugins.hilt)
     alias(libs.plugins.kapt)
+    id("maven-publish")
 }
 
 android {
@@ -39,7 +40,19 @@ android {
     }
 }
 
-apply(from = "$rootDir/stt-gradle-maven.gradle")
+//apply(from = "$rootDir/stt-gradle-maven.gradle")
+
+configure<PublishingExtension> {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.namxike24"
+            artifactId = "FSTT"
+            version = "1.0.4"
+            afterEvaluate { from(components["release"]) }
+        }
+    }
+
+}
 
 dependencies {
 

@@ -44,5 +44,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(project(":FSTTSdk"))
+//    implementation(project(":FSTTSdk"))
+    implementation ("com.github.namxike24:FSTT:1.0.3")
 }
